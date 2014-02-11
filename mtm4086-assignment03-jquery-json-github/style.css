@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,800italic,400,300,600,700,800);
+
+/*Default*/
+body{font-size:62.5%; font-family: 'Open Sans', sans-serif;}
+
+h1, h2, h3, p{font-size:  1.3em; width:120px; font-weight:300;}
+p{font-size: 1.1em; font-style:italic;}
+span {text-align:right; color:#0CF;}
+
+#save{width:200px; height:30px; font-family:'Open Sans', sans-serif; text-transform:uppercase; border:none; background-color:rgba(0,153,204,1); color:#fff;}
