@@ -7,8 +7,13 @@
 /*Default*/
 body{font-size:62.5%; font-family: 'Open Sans', sans-serif;}
 
-h1, h2, h3, p{font-size:  1.3em; width:120px; font-weight:300;}
-p{font-size: 1.1em; font-style:italic;}
-span {text-align:right; color:#0CF;}
+.gData{width:250px;}
+.imgholder{margin:3%; margin-right:7%; float:left;}
+.contentholder{float:left;}
+.gLink{float:left; width:250px;}
 
-#save{width:200px; height:30px; font-family:'Open Sans', sans-serif; text-transform:uppercase; border:none; background-color:rgba(0,153,204,1); color:#fff;}
+h1, h2, h3, p{font-size: 1.3em; font-weight:300;}
+p{font-size: 1.1em; font-style:italic;}
+span {text-align:right; font-weight:bold; margin-left:0.6em;}
+
+#save{width:250px; height:30px; font-family:'Open Sans', sans-serif; text-transform:uppercase; border:none; background-color:rgba(0,153,204,1); color:#fff;}
