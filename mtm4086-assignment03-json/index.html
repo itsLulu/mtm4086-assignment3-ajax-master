@@ -1,15 +1,43 @@
 <html>
-  <head>
-    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-    <title>Json</title>
-  </head>
-  <body>
+<head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<title>Json Assignment</title>
+<link href="css/style.css" rel="stylesheet">
+</head>
 
-    <h1 class="title">My trip in <span>San Fran</span></h1>
-    <div class="imgholder"><img src="img/trip.jpg"></div>
-    <button type="button" onclick="loadJSON()">Check</button>
-    <div id="article-feed"></div>
+<body>
 
-  <script src="js/json-ajax.js"></script>
-  </body>
+	<header>
+		<div class="headertitle">My trip in San Francisco</div>
+	</header>
+
+	<section class="col-1 col-container col-featured">
+		<article class="col">
+			<div class="article-image-featured"></div>
+			<div class="article-content-featured">
+				<p>2009 is the year I fell in love with San Francisco. That year, before returning to Taiwan from my expat in Mexico, I stayed in this city for 10 days. During the time, I explored the city with my camera, eyes and my taste buds....</p>
+				<button type="button" onclick="loadJSON()">See More...</button>
+			</div>
+
+		</article>
+	</section>
+
+	<div id="article-feed" class="col-1 col-container"></div>
+
+
+
+	<footer>
+		<nav class="nav-social">
+			<ul classs="nav-sociallist">
+				<li class="nav-sociallink facebook"><a href="" aria-hidden="" data-icon="&#xe0aa;"></a></li>
+				<li class="nav-sociallink twitter"><a href="" aria-hidden="" data-icon="&#xe0ab;"></a></li>
+				<li class="nav-sociallink youtube"><a href="" aria-hidden="" data-icon="&#xe0b3;"></a></li>
+				<li class="nav-sociallink pinterest"><a href="" aria-hidden="" data-icon="&#xe0ac;"></a></li>
+			</ul>
+		</nav>
+
+		<p>&#169; copyright 2014 Lulu Davies</p>
+	</footer>
+<script src="js/json-ajax.js"></script>
+</body>
 </html>

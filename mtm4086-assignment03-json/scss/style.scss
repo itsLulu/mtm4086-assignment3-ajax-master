@@ -1,21 +1,43 @@
+/* Scss Document */
 @import 'normalize';
+@import 'fonts';
+@import 'mixins';
 
-/*Fonts*/
-@import url(http://fonts.googleapis.com/css?family=Junge);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+$font-branding: Domine, sans-serif;    
+$font-primary: "Open Sans", sans-serif;
+$font-secondary: Helvetica, sans-serif;
+$color1: #4c575d; /*dark blue*/
+$color2: #5e5e5e; /*dark grey*/
+$color3: #c5c8ca; /*medium grey*/
+$color4: #ebebeb; /*light grey*/
+$color5: black;
+$color6: white;
+$color7: #a699b1; /*light purple*/
 
+@import 'navlist';
+@import 'layout';
 
-/*Layout*/
-.imgholder{width:100%;}
+body{font-size:62.5%;font-family:$font-primary;}
+a {text-decoration: none;}
+li {list-style: none;}
 
-
-
-
-
-@media only screen and (min-width:620px){
-
+header{ 
+	@include clearfix;
+	position:absolute; top:0;
+	width:100%; background-color:$color4; float:left;
+		.headertitle{ float:left; width:96%;
+		font-family:$font-branding; font-size:4em; line-height:1em;
+		padding:4% 2% 4%;
+	}
 }
 
-@media only screen and (min-width:980px){
+.article-image-featured{background:url(../img/mytrip.jpg); background-size:cover;}
+button{float:right; width:150px; height:30px; background-color:$color7; border:none; margin:5%;}
 
+footer{
+	@include clearfix;
+	width:98%; background-color:$color4;
+	float:left; padding:2% 0 0 2%; margin:0;
 }
+
+

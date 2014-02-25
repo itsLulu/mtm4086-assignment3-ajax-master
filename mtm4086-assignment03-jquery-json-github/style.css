@@ -7,6 +7,7 @@
 /*Default*/
 body{font-size:62.5%; font-family: 'Open Sans', sans-serif;}
 
+.gFeed{width:280px;}
 .gData{width:250px;}
 .imgholder{margin:3%; margin-right:7%; float:left;}
 .contentholder{float:left;}

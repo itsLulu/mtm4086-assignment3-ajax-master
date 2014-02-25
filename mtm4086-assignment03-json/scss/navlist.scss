@@ -1,0 +1,51 @@
+/*navigation styles*/
+
+/*nav-content*/
+
+.nav-content{
+	margin:0; padding:0;
+	li{
+		margin:0.1em 0 0;
+		a{margin-right:1em; color:$color2;}
+		&:hover a{color:$color7;}
+	}
+}
+
+/*navlist for social media in the footer*/
+.nav-social{
+
+	ul{
+		float:left; width:100%; margin:2% 0 2% 0; padding:0;
+		li{ float:left; text-align:left;
+			font-size:3.5em; width:55px;
+
+		&:hover a{color:$color7;}
+		
+		a{color:$color2;}
+		}
+	}
+
+}
+
+
+/*for large screen*/
+@media only screen and (min-width:980px){
+
+
+	/*nav-contact*/
+	.nav-contactinfo{width:20%; height:200px; float:right; position:static; padding:1% 3% 0 0; margin-top:2%;}
+
+	/*social media list*/
+	.nav-social{
+		ul{float:right; width:auto; margin:0;}
+	}
+
+	/*nav-content*/
+	.nav-content li {color:$color2; font-size:1.1em;}
+	
+}
+
+/*for extra large screen*/
+@media only screen and (min-width:1024px){
+	
+}

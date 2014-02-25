@@ -41,20 +41,42 @@ function loadJSON(){
               // the element to append everything to.
               var feedWrapper = document.getElementById('article-feed');
 
-              // Article Heading and Link - Title is text, url is href
-              var articleHeading = document.createElement('h1');
+              //each article (image) 
+              var eacharticle = document.createElement('article');
+              eacharticle.className = 'col col-3';
+
+              var imgHolder = document.createElement('div');
+              imgHolder.className = 'article-image';
+
+              var articleImage = document.createElement('img');
+              articleImage.setAttribute('src',jsonObj[key].imageUrl);
+
+              // Article Heading, caption, link and credits
+              var textcontainer = document.createElement('ul');
+              textcontainer.className = 'nav-content';
+
+
+              var articleTitle = document.createElement('li');
               var articleLink = document.createElement('a');
               articleLink.setAttribute('href', jsonObj[key].url);
               articleLink.innerHTML = jsonObj[key].title;
-              articleHeading.appendChild(articleLink);
+              articleTitle.appendChild(articleLink);
 
-              // Article Image
-              var articleImage = document.createElement('img');
-              articleImage.setAttribute('src',jsonObj[key].imageUrl)
+              var articleCaption = document.createElement('li');
+              articleCaption.innerHTML = jsonObj[key].caption;
+
+              var articleCredit = document.createElement('li');
+              articleCredit.innerHTML = jsonObj[key].credits;
+
 
               // Appending html elements and values to my div article-feed
-              feedWrapper.appendChild(articleImage);
-              feedWrapper.appendChild(articleHeading);
+              feedWrapper.appendChild(eacharticle);
+              eacharticle.appendChild(imgHolder);
+              imgHolder.appendChild(articleImage);
+              eacharticle.appendChild(textcontainer);
+              textcontainer.appendChild(articleTitle);
+              textcontainer.appendChild(articleCaption);
+              textcontainer.appendChild(articleCredit);
               
            }
 

@@ -12,15 +12,9 @@ $('#save').click(function () {
             // setTimeout added to show loading
             console.log(data);
             
-                $('#gPic').html(
-				'<div class="gPic"><img src="' + data.avatar_url + '"> <span>test</span></div>'
-				);
-				//+ data.login + '<br>' + data.public_repos + '<a href="' + data.html_url + '"> GitHub account</a>' + data.created_at);
-	
-				//$('.gLink').html(data.html_url);
-				
-				
-           
+                $('#gData').html(
+				'<div class="gFeed"><div class="imgholder"><img src="' + data.avatar_url + '"></div><div class="contentholder"><h1>GitHub Name:<span>' + data.login + '</span></h1><h2>Public Repos:<span>' + data.public_repos + '</span></h2><p>Date created:<br><span>' + data.created_at + '</span></p></div><div class="gLink"><a href="' + data.url+ '">GitHub Link</a></div></div>'
+				);           
         }
     });
 });

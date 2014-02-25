@@ -1,5 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700,600,300);
+@import url(http://fonts.googleapis.com/css?family=Marcellus+SC);
+
 body {
- max-width: 50em;
+ max-width: 1280;
  margin: 0 auto;
  background: #fff;
  color: #333;
@@ -13,6 +16,7 @@ body {
  text-transform: uppercase;
  clear: both;
  margin-bottom: 1.75em;
+ margin-right:2%;
 }
 .pager li {
  display: inline;
@@ -40,7 +44,6 @@ body {
  width: 10em;
  height: 10em;
  line-height: 10em;
- border: 1px solid #acc314;
  color: #888;
  font-style: italic;
  text-align: center;
@@ -48,4 +51,15 @@ body {
 .loading {
  min-height: 5em;
  background: url('http://preloaders.net/preloaders/287/Filling%20broken%20ring.gif') center center no-repeat;
+}
+
+/*images*/
+.product-list li{width: 30%; height:auto;overflow:visible;}
+.product-list img{width:100%; max-width:220px; box-shadow: 4px 5px 4px rgba(0,0,0,0.35);}
+
+h1{font-family: 'Raleway', sans-serif; font-size:4em; padding:0.5em;font-weight:300;line-height:1.5em;}
+h2{font-family: 'Marcellus SC', serif;font-size:10em;line-height:0.5em; margin-top:-200px; text-align:right; color:rgba(191,192,193,0.2);overflow:hidden;padding:0.1em 0 0.3em 0;}
+
+@media only screen and (max-width:380px){
+	.product-list li{width:90%; margin:0 5% 0 0;}
 }

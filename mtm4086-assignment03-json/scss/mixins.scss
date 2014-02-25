@@ -1,0 +1,29 @@
+@mixin clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020"; 
+        display: block; 
+        height: 0; 
+        overflow: hidden; 
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin filter($percent){
+  -webkit-filter: grayscale($percent);
+     -moz-filter: grayscale($percent);
+      -ms-filter: grayscale($percent);
+       -o-filter: grayscale($percent);
+          filter: grayscale($percent);
+
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
